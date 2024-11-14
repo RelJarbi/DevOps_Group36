@@ -4,14 +4,14 @@ export class BerlinClock {
         if (this.isAMultipleOfminuteAndRemainder(time, 1)) {
           result = "premiere ampoule allumé";
         }
+        if (this.isAMultipleOfminuteAndRemainder(time, 2)) {
+            result = "premiere et deuxieme ampoule allume";
+          }
+        
         return res;
       }
 
-      minuteForFive(minute) {
-        minute = minute - minute % 5;
-        if (this.resultForFivsion(minute, 1)) return "premiere ampoule allumé";
-        return "TOUT ETEINT";
-      }
+      
       
 
 
