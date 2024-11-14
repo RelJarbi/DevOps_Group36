@@ -12,6 +12,12 @@ it("doit retourner la première ampoule allumée lorsque les minutes sont égale
     let result = berlinClock.hourOrMinuteLamp(2);
 
     expect(result).toBe("premiere et deuxieme ampoule allume");
+    
+    it(" retourner première, deuxième et troisième ampoule allumées lorsque les minutes sont égales à 3", function () {
+        let result = berlinClock.hourOrMinuteLamp(3);
+    
+        expect(result).toBe("premiere, deuxieme et troisieme ampoule allume");
+      });
   });
 
   
