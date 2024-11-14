@@ -47,6 +47,52 @@ it("doit retourner la première ampoule allumée lorsque les minutes sont égale
         expect(result).toBe("allumé jusque deux");
 
   });
+  it("la fonction BerlinClock devrait retourner toutes les lumières de la première ligne sont éteintes lorsque les minutes sont égales à 5", function () {
+    let result = berlinClock.minuteForFive(15);
 
+    expect(result).toBe("allumé jusqu'à 3, en rouge");
+  });
+  it("la fonction BerlinClock devrait retourner toutes les lumières de la première ligne sont éteintes lorsque les minutes sont égales à 5", function () {
+    let result = berlinClock.minuteForFive(20);
 
+    expect(result).toBe("allumé jusqu'à 4");
+  });
+  it("la fonction BerlinClock devrait retourner toutes les lumières de la première ligne sont éteintes lorsque les minutes sont égales à 5", function () {
+    let result = berlinClock.minuteForFive(25);
+
+    expect(result).toBe("allumé jusqu'à 5");
+  });
+  it("la fonction BerlinClock devrait retourner toutes les lumières de la première ligne sont éteintes lorsque les minutes sont égales à 5", function () {
+    let result = berlinClock.minuteForFive(30);
+
+    expect(result).toBe("allumé jusqu'à 6, en rouge");
+  });
+  it("la fonction BerlinClock devrait retourner toutes les lumières de la première ligne sont éteintes lorsque les minutes sont égales à 5", function () {
+    let result = berlinClock.minuteForFive(35);
+
+    expect(result).toBe("allumé jusqu'à 7");
+  });
+  it("la fonction BerlinClock devrait retourner toutes les lumières de la première ligne sont éteintes lorsque les minutes sont égales à 5", function () {
+    let result = berlinClock.minuteForFive(40);
+
+    expect(result).toBe("allumé jusqu'à 8");
+  });
+  it("la fonction BerlinClock devrait retourner toutes les lumières de la première ligne sont éteintes lorsque les minutes sont égales à 5", function () {
+    let result = berlinClock.minuteForFive(45);
+
+    expect(result).toBe("allumé jusqu'à 9, en rouge");
+  });
+  it("la fonction BerlinClock devrait retourner toutes les lumières de la première ligne sont éteintes lorsque les minutes sont égales à 5", function () {
+    let result = berlinClock.minuteForFive(50);
+
+    expect(result).toBe("allumé jusqu'à 10");
+  });
+  it("la fonction BerlinClock devrait retourner toutes les lumières de la première ligne sont éteintes lorsque les minutes sont égales à 5", function () {
+    let result = berlinClock.minuteForFive(55);
+
+    expect(result).toBe("allumé jusqu'à 11");
+  });
 });
+
+
+

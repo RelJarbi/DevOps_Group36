@@ -41,7 +41,22 @@ export class BerlinClock {
         if (this.resultForFivsion(min, 12)) return "TOUT ETEINT";
       }
       
+      hoursForFive(hour){
+        if (this.resultForFivsion(min, 1)) return "allumé jusque 1";
+        if (this.resultForFivsion(min, 2)) return "allumé jusque 2";
+        if (this.resultForFivsion(min, 3)) return "allumé jusque 3";
+        if (this.resultForFivsion(min, 4)) return "allumé jusque 4";
+        if (this.resultForFivsion(min, 5)) return "allumé jusque 5";
+      }
+      resultForFivsion(min, expect) {
+        return min / 5 === expect;
+      }
+    
+      isAMultipleOfminuteAndRemainder(min, remainder) {
+        return min % 5 === remainder;
+      }
+    }
+    
       
 
 
-}
