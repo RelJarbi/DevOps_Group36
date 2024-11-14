@@ -6,5 +6,13 @@ export class BerlinClock {
         }
         return res;
       }
+
+      minuteForFive(minute) {
+        minute = minute - minute % 5;
+        if (this.resultForFivsion(minute, 1)) return "premiere ampoule allumé";
+        return "TOUT ETEINT";
+      }
       
+
+
 }
