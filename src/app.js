@@ -10,6 +10,10 @@ export class BerlinClock {
           if (this.isAMultipleOfminuteAndRemainder(time, 3)) {
             result = "premiere, deuxieme et troisieme ampoule allume";
           }
+
+          if (this.isAMultipleOfminuteAndRemainder(time, 4)) {
+            result = "premiere, deuxieme, troisieme et quatrieme ampoule allume";
+          }
         
         return res;
       }
