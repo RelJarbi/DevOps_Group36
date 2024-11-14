@@ -26,7 +26,27 @@ it("doit retourner la première ampoule allumée lorsque les minutes sont égale
           "premiere, deuxieme, troisieme et quatrieme ampoule allume"
         );
       });
+      it("toutes les lumières de la première ligne sont éteintes lorsque les minutes sont égales à 5", function () {
+        let result = berlinClock.hourOrMinuteLamp(5);
+    
+        expect(result).toBe("toutes les lumiere de la premiere ligne sont eteinte");
+      });
+      it("berlinClock function should return toutes les lumiere de la premiere ligne sont eteinte when minute is 5", function () {
+        let result = berlinClock.hourOrMinuteLamp(60);
+    
+        expect(result).toBe("toutes les lumiere de la premiere ligne sont eteinte");
+      });
+      it("berlinClock function should return toutes les lumiere de la premiere ligne sont eteinte when minute is 5", function () {
+        let result = berlinClock.minuteForFive(5);
+    
+        expect(result).toBe("premiere ampoule allumé");
+      });
+      it("berlinClock function should return toutes les lumiere de la premiere ligne sont eteinte when minute is 5", function () {
+        let result = berlinClock.minuteForFive(10);
+    
+        expect(result).toBe("allumé jusque deux");
+
   });
 
-  
-  
+
+});
